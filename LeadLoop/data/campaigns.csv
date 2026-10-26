@@ -1,0 +1,19 @@
+campaign_id,name,type,channel,product,region,start_date,end_date,spend_usd,location
+C101,Compliance Newsletter,Email,Email,Sentinel,Global,2026-04-01,2026-09-30,0,
+C102,Sanctions Nurture,Email,Email,Sentinel,Global,2026-04-01,2026-09-30,0,
+C103,Beacon Launch Email,Email,Email,Beacon,Global,2026-08-14,2026-08-14,0,
+C301,Global Crypto Compliance Summit,Event,Event,Sentinel,Global,2026-05-19,2026-05-21,42000,Las Vegas
+C302,EMEA Sanctions Leaders Roundtable,Event,Event,Sentinel,EMEA,2026-06-10,2026-06-10,6500,London
+C304,EMEA Field Dinner,Event,Event,Sentinel,EMEA,2026-07-15,2026-07-15,8000,Frankfurt
+C305,EMEA Compliance Breakfast,Event,Event,Sentinel,EMEA,2026-09-10,2026-09-10,12000,Paris
+C401,LinkedIn: Compliance Leaders,Paid,Paid Social,Sentinel,Global,2026-04-01,2026-09-30,54297,
+C402,Meta: Crypto Glossary,Paid,Paid Social,Sentinel,Global,2026-04-01,2026-09-30,33705,
+C403,Google: Branded Search,Paid,Paid Search,Sentinel,Global,2026-04-01,2026-09-30,49011,
+C500,Partner Portal,Partner,Referral,Sentinel,Global,2026-04-01,2026-09-30,0,
+C201,Webinar: Crypto Tracing 101,Webinar,Webinar,Sentinel,Global,2026-04-01,2026-04-28,3000,
+C202,Webinar: Sanctions Screening Deep Dive,Webinar,Webinar,Sentinel,Global,2026-04-29,2026-05-27,3000,
+C203,Webinar: Case Management at Scale,Webinar,Webinar,Sentinel,Global,2026-05-28,2026-06-24,3000,
+C204,Webinar: Cross-Chain Investigations,Webinar,Webinar,Sentinel,Global,2026-06-25,2026-07-22,3000,
+C205,Webinar: Public Sector Playbook,Webinar,Webinar,Sentinel,Global,2026-07-23,2026-08-13,3000,
+C206,Webinar: Beacon Launch,Webinar,Webinar,Beacon,Global,2026-08-14,2026-09-16,3000,
+C207,Webinar: Fraud Typologies,Webinar,Webinar,Sentinel,Global,2026-09-03,2026-10-07,3000,

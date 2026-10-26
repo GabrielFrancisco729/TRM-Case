@@ -1,0 +1,27 @@
+{
+  "notes": "EXAMPLE ONLY. Replace after Salesforce schema discovery. No guessed Quillon custom field is guaranteed to exist.",
+  "source_mode": "csv",
+  "mql_object_api_name": "Lead",
+  "mql_fields": {
+    "mql_id": "External_MQL_Id__c",
+    "contact_name": "Name",
+    "email": "Email",
+    "region": "Region__c",
+    "status": "Status",
+    "owner_id": "OwnerId",
+    "created_date": "CreatedDate"
+  },
+  "writeback": {
+    "status_object": "Lead",
+    "status_field": "Status",
+    "assignment_field": "OwnerId",
+    "outreach_object": "Task"
+  },
+  "requirements": [
+    "Validate available objects/fields with describe endpoints",
+    "Map historical MQL event ID to real Salesforce record ID",
+    "Map AD user IDs to Salesforce User IDs and verify record permissions",
+    "Implement OAuth refresh strategy, sandbox testing and change-data capture",
+    "Never replay historical activities without explicit approval"
+  ]
+}

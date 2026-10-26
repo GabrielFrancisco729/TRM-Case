@@ -1,0 +1,12 @@
+# Local environment and generated output
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+state/*.sqlite3
+state/*.sqlite3-*
+.env
+.env.*
+!.env.example
+.DS_Store

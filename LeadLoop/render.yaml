@@ -1,0 +1,26 @@
+# Render Blueprint — create as New > Blueprint.
+# For a normal Web Service use the matching Build / Start commands below.
+services:
+  - type: web
+    name: quillon-leadloop-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: MANAGER_DEMO_PIN
+        sync: false
+      - key: LEADLOOP_SITE_USER
+        value: reviewer
+      - key: LEADLOOP_SITE_PASSWORD
+        sync: false
+      - key: LEADLOOP_SECURE_COOKIES
+        value: 'true'
+# ANTHROPIC_API_KEY and LEADLOOP_LLM_MODEL are intentionally omitted.
+# If enabling paid API calls, add them in the Render dashboard as secrets.
+# Render Free has EPHEMERAL SQLite, and sleeps after inactivity.

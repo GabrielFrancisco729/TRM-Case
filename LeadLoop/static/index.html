@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1728" />
+  <title>Quillon LeadLoop — From signals to action</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">Q<span>◢</span></span><span class="brand-copy">QUILLON <small>LEADLOOP / PLATFORM</small></span></div>
+      <div class="sidebar-label">THE EXPERIENCE</div>
+      <button class="nav-btn active" id="navStory" type="button"><span class="nav-icon">◷</span><span>Investigation</span><span class="nav-mini">01</span></button>
+      <button class="nav-btn" id="navWorkflow" type="button"><span class="nav-icon">⇢</span><span>Workflow</span><span class="nav-mini">02</span></button>
+      <button class="nav-btn locked" id="navWorkspace" type="button"><span class="nav-icon">▦</span><span>Workspace</span><span class="nav-mini">03</span></button>
+      <button class="nav-btn" id="navRoadmap" type="button"><span class="nav-icon">◇</span><span>Roadmap</span><span class="nav-mini">04</span></button>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-label">CASE PARAMETERS</div>
+      <div class="side-fact"><span>DATA WINDOW</span><strong>APR — SEP 2026</strong></div>
+      <div class="side-fact"><span>SOURCE</span><strong>14 CSV FILES</strong></div>
+      <div class="side-fact"><span>MODE</span><strong>LOCAL DEMO</strong></div>
+      <div class="sidebar-bottom"><div class="health-dot"></div><div><strong>Local-first prototype</strong><small>No live CRM data or outbound messaging by default</small></div></div>
+    </aside>
+    <div class="app-frame">
+      <header class="topbar"><span id="breadcrumbs">CASE STUDY <span class="crumb-sep">/</span> INVESTIGATION</span><div class="topright"><span class="demo-chip">● DATA-BACKED DEMO</span><button type="button" class="account-btn hide" id="accountBtn">Account ▾</button></div></header>
+      <main id="mainContent" class="main-content">
+        <section id="storyView" class="page-panel"></section>
+        <section id="gateView" class="page-panel hide"></section>
+        <section id="workspaceView" class="page-panel hide"></section>
+        <section id="workflowView" class="page-panel hide"></section>
+        <section id="roadmapView" class="page-panel hide"></section>
+      </main>
+    </div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" role="status" aria-live="polite"></div>
+  <script src="/static/app.js" defer></script>
+  <script src="/static/workflow.js" defer></script>
+</body>
+</html>
